@@ -1,0 +1,70 @@
+[hun]
+YANonymous Construct: http://progpater.blog.hu/9999/12/31/yanonymous_yana_anonymous_you_are_not_anonymous
+
+ADT Bundle letöltése: http://developer.android.com/sdk/index.html 
+
+Minden ablakban, vagy egyszerűen a $HOME/.profile fájl végére (miután újra loginolni kell)
+
+$ export ANDROID_HOME=$HOME/adt-bundle-linux-x86_64-20130522/sdk
+$ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+Megfelelő Maven életciklusok futtatása:
+
+$ mvn clean install (a pom.xml-el egy szinten kiadva)
+
+Emulátor indítása (másik ablakban)
+
+$ android avd
+
+Progi feltöltése az emulátorba (feltéve, hogy a pom.xml-el egy szinten állunk)
+
+$ adb install target/YANonymous-1.apk (vagy akár Maven életciklusként: mvn android:deploy)
+
+<<<<<<< HEAD
+
+[eng]
+
+You can read the project's blog here (it's just in hungarian):
+YANonymous Construct: http://progpater.blog.hu/9999/12/31/yanonymous_yana_anonymous_you_are_not_anonymous
+
+You can download the ADT Bundle from here: http://developer.android.com/sdk/index.html
+
+You should use these commands every terminal, or just paste the end of $HOME/.profile file (if you do this, you have to relog at first time):
+$ export ANDROID_HOME=$HOME/adt-bundle-linux-x86_64-20130522/sdk
+$ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+The Maven lifecycle run in the same level as the pom.xml
+$ mvn clean install
+
+You can start the emulator:
+$ android avd
+
+Use these commands to upload the program to the amulator if you are in the same level as pom.xml
+$ adb install target/YANonymous-1.apk
+or just use maven: 
+mvn android:deploy
+
+
+=======
+----------------------------------------------------------------------------------------------------------------------------
+
+Download ADT Boundle: http://developer.android.com/sdk/index.html
+
+Setting environment variables:
+in every terminal window, or simply paste it into the bottom of the $HOME/.profile (that takes effect after the next login):
+
+$ export ANDROID_HOME=$HOME/adt-bundle-linux-x86_64-20130522/sdk
+$ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+Run this maven lifecycle to build the project
+
+$ mvn clean install (executed in the folder that contains pom.xml)
+
+Launch an emulator (in a separate terminal)
+
+$ android avd
+
+Upload the application to your emulator (executed in the folder that contains pom.xml)
+
+$ adb install target/YANonymous-1.apk (or even as a maven lifecycle: mvn android:deploy)
+>>>>>>> f5cc9e536a01fb88b913fa08ccff0eb581300b9c

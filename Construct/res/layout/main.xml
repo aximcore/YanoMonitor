@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <net.sourceforge.yanonymous.YourWorldView xmlns:android="http://schemas.android.com/apk/res/android"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent"/>
+    <Button android:id="@+id/menu"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:textSize="20sp"
+            android:text="@string/menu"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="newMenu"/>
+
+    <CheckBox android:id="@+id/move"
+              android:layout_width="110dp"
+              android:layout_height="33dp"
+              android:textSize="12sp"
+              android:text="@string/mozgatas"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentRight="true"/>
+
+
+
+    <CheckBox android:id="@+id/deleteRelation"
+              android:layout_width="110dp"
+              android:layout_height="33dp"
+              android:textSize="12sp"
+              android:text="Kapcsolat törlés"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentLeft="true"/>
+</RelativeLayout>
