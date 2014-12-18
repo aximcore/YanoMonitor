@@ -1,0 +1,49 @@
+option java_package = "yanomonitor";
+
+message Datas {
+    repeated Node nodes = 1;
+    repeated Relations relations = 2;
+}
+
+message Node{
+    required bool isMe = 1 [ default = false];
+    required int32 x = 2;
+    required int32 y = 3;
+    required int32 id = 4;
+    optional int32 relId = 5;
+
+    enum Name{
+        Party = 1;
+        Fidesz = 2;
+        MSZP = 3;
+        KDNP = 4;
+        Jobbik = 5;
+        LMP = 6;
+        EgyuttPM = 7;
+        DK = 8;
+        Yano = 9;
+    }
+
+    required Name name = 6 [ default = Party];
+}
+
+message Relations{
+
+    required int32 x1 = 1;
+    required int32 y1 = 2;
+    required int32 x2 = 3;
+    required int32 y2 = 4;
+
+    enum Name{
+        Relationship = 1;
+        Csajom = 2;
+        Fium = 3;
+        Muter = 4;
+        Fater = 5;
+        Teso = 6;
+        Szomszed = 7;
+    }
+
+    required Name name = 5 [default = Relationship ];
+
+}

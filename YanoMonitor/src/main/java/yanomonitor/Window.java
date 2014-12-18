@@ -3,14 +3,18 @@ package yanomonitor;
 import java.awt.*;
 import java.awt.geom.*;
 
+import yanomonitor.YanoData.*;
+import yanomonitor.Yanomonitor.*;
 public class Window extends javax.swing.JFrame{
-	java.util.Vector<Node> anonyms;
+	private YanoData.Datas datas;
+	//java.util.Vector<Node> anonyms;
 	boolean imageLoaded;
 	Image meIco;
-	java.util.Vector<Relations> relation;
-	Window(java.util.Vector<Node> ano,java.util.Vector<Relations> rel,int x, int y){
-		anonyms=ano;
-		relation=rel;
+	//java.util.Vector<Relations> relation;
+	Window(/*java.util.Vector<Node> ano,java.util.Vector<Relations> rel,*/Datas datas,int x, int y){
+		this.datas = datas;
+		//anonyms=ano;
+		//relation=rel;
 		setBounds(10,10,x,y);
 		setTitle("Yanonymous graphicon monitor");
 		setVisible(true);
@@ -23,6 +27,7 @@ public class Window extends javax.swing.JFrame{
 		meIco = new javax.swing.ImageIcon("./Construct/res/drawable-hdpi/ic_launcher.png").getImage();
 	}
 
+
 	public void paint(Graphics g){
 		if (g instanceof Graphics2D){
 				Graphics2D g2d = (Graphics2D)g;
@@ -30,26 +35,27 @@ public class Window extends javax.swing.JFrame{
 			}
 		Graphics2D g2d = (Graphics2D)g;
 		g2d.setStroke(new BasicStroke(10F));
-		for (Relations rel : relation){
-			
-			g.setColor(rel.get_color());
-			g.drawLine(rel.get_a().get_mid_x(),rel.get_a().get_mid_y(),rel.get_b().get_mid_x(),rel.get_b().get_mid_y());
+
+		for (YanoData.Relations rel : datas.getRelationsList() ){
+			g.setColor(Color.cyan);
+			g.drawLine(rel.getX1(),rel.getY1(),rel.getX2(),rel.getY2());
 		}
 
-		for (Node node: anonyms){
+		for ( YanoData.Node node : datas.getNodesList()){
 			g.setColor(Color.BLACK);
-			g.drawOval(node.get_x(),node.get_y(),node.get_diam(),node.get_diam());
-			Ellipse2D.Double circle = new Ellipse2D.Double(node.get_x(),node.get_y(),node.get_diam(),node.get_diam());
-			g2d.setColor(node.get_color());
+			g.drawOval(node.getX(),node.getY(),10,10);
+			Ellipse2D.Double circle = new Ellipse2D.Double(node.getX(),node.getY(),10,10);
+			g2d.setColor(Color.LIGHT_GRAY);
 			g2d.fill(circle);
+
 			g.setColor(Color.BLACK);
 			g.setFont(new Font("Times New Roman",Font.PLAIN,25));
-			g.drawString(node.get_name(),node.get_mid_x()-25,node.get_mid_y());
-			if (node.get_isme()){
-				if (!imageLoaded){
-						initPics();
-				}
-				g2d.drawImage(meIco,node.get_x(),node.get_y(),40,40,null);
+			g.drawString(node.getName().toString(),node.getX()/* TODO */-25,node.getY()/* TODO */);
+
+			if ( node.getIsMe() ) {
+				if (!imageLoaded)
+					initPics();
+				g2d.drawImage(meIco, node.getX(), node.getY(), 40, 40, null);
 			}
 		}
 	}
