@@ -1,9 +1,0 @@
-.keystore
-target
-*.iml
-.settings
-.project
-.classpath
-nb-configuration.xml
-nbactions.xml
-.idea
