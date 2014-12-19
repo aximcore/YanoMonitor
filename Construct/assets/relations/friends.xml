@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<relation name="Friends" color="#a8349836">
+    <item name="Best friend" color="#c1582a6e" />
+    <item name="Girlfriend" color="#71c12f51" />
+    <item name="Boyfriend" color="#81ea4d08" />
+    <item name="Drink buddy" color="#8fb5987e" />
+    <item name="Classmate" color="#90956163" />
+    <item name="Buddy" color="#d2db08c7" />
+</relation>

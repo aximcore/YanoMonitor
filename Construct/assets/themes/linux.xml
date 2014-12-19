@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme name="Linux" type="TEXT" color="#ff0000">
+    <item name="Debian" color="#ffaabb" />
+    <item name="Ubuntu" color="#ffaabb" />
+    <item name="Arch" color="#ffaabb" />
+    <item name="Fedora" color="#ffaabb" />
+    <item name="Mint" color="#ffaabb" />
+    <item name="Maegia" color="#ffaabb" />
+</theme>

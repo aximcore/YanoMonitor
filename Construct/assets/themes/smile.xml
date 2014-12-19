@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme name="Smile" type="IMAGE" color="#78984563">
+    <item name="smile1" color="#78984563" />
+    <item name="smile2" color="#78ad458c" />
+    <item name="smile3" color="#789845a6" />
+    <item name="smile4" color="#7896c563" />
+    <item name="smile5" color="#78584d63" />
+    <item name="smile6" color="#78984763" />
+    <item name="smile7" color="#78984893" />
+    <item name="smile8" color="#78934563" />
+</theme>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YANonymous Construct</string>
+    <string name="menu">メニュー</string>
+    <string name="cancel">キャンセル</string>
+    <string name="ok">大丈夫</string>
+    <string name="defaultColor">デフォルト</string>
+    <string name="save">保存</string>
+    <string name="delete">削除</string>
+    <string name="clear">クリーニング</string>
+    <string name="load">充電</string>
+    <string name="cbc">背景改正</string>
+    <string name="red">赤</string>
+    <string name="green">グリーン</string>
+    <string name="blue">ブルー</string>
+</resources>

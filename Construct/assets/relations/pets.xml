@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<relation name="Pets" color="#a075c05b">
+    <item name="Dog" color="#b08f002f" />
+    <item name="Cat" color="#c86a3201" />
+    <item name="Parrot" color="#f7852976" />
+    <item name="Hamster" color="#a9169d96" />
+    <item name="Guinea pig" color="#e522e9f5" />
+    <item name="Turtle" color="#79069d96" />
+    <item name="Lion" color="#7a26c019" />
+    <item name="Tiger" color="#dd1b0c4d" />
+    <item name="Snake" color="#ae926d73" />
+    <item name="Spider" color="#af16a81c" />
+</relation>

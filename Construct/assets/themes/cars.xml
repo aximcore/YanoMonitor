@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme name="Cars" type="TEXT" color="#78a68578">
+    <item name="Audi" color="#78b4678c" />
+    <item name="Opel" color="#78d61548" />
+    <item name="Suzuki" color="#78a5897d" />
+    <item name="Trabant" color="#73a6858a" />
+    <item name="VW" color="#80ff78ad" />
+    <item name="Ford" color="#bababa" />
+    <item name="BMW" color="#bababa" />
+    <item name="Mercedes" color="#bababa" />
+    <item name="Lada" color="#bababa" />
+    <item name="Saab" color="#bababa" />
+    <item name="Subaru" color="#bababa" />
+    <item name="Nissan" color="#bababa" />
+    <item name="Toyota" color="#bababa" />
+    <item name="Honda" color="#bababa" />
+    <item name="Mazda" color="#bababa" />
+</theme>

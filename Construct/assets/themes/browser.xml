@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme name="Browser" type="TEXT" color="#7896a554">
+    <item name="Chrome" color="#bababa" />
+    <item name="Firefox" color="#bababa" />
+    <item name="IE" color="#bababa" />
+    <item name="Opera" color="#bababa" />
+    <item name="Maxthon" color="#bababa" />
+</theme>

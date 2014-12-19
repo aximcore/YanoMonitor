@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme name="Music" type="TEXT" color="#ff0033">
+    <item name="DNB" color="#ff0044" />
+    <item name="Pop" color="#ff0044" />
+    <item name="Rock" color="#ff0044" />
+    <item name="Metal" color="#ff0044" />
+    <item name="Jazz" color="#ff0044" />
+    <item name="Classic" color="#ff0044" />
+    <item name="Opera" color="#ff0044" />
+</theme>

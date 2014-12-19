@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme name="Politics" type="TEXT" color="#80ff0000">
+    <item name="Fidesz" color="#ff4f03" />
+    <item name="MSZP" color="#a8121e" />
+    <item name="KDNP" color="#ffd200" />
+    <item name="Jobbik" color="#187429" />
+    <item name="LMP" color="#97d550" />
+    <item name="DK" color="#00117b" />
+    <item name="Együtt-PM" color="#42a72b" />
+</theme>

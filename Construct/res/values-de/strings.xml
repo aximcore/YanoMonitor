@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YANonymous Construct</string>
+    <string name="menu">Menü</string>
+    <string name="cancel">Austritt</string>
+    <string name="ok">Richtig</string>
+    <string name="defaultColor">Standard</string>
+    <string name="save">Rettung</string>
+    <string name="delete">Klar</string>
+    <string name="clear">Reinigungs</string>
+    <string name="load">Aufladen</string>
+    <string name="cbc">Hintergrund Änderung</string>
+    <string name="red">Rot</string>
+    <string name="green">Grün</string>
+    <string name="blue">Blau</string>
+</resources>

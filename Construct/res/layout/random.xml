@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+	    android:id="@+id/LinLayout"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	    <TextView android:id="@+id/randomProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/nodes"
+            android:textColor="#00ffff"
+            android:textSize="20sp" />
+	    
+	    <SeekBar android:id="@+id/randomBar"
+	        android:max="20"
+	        android:layout_height="wrap_content"
+	        android:layout_width="270dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        />
+	    
+	       <LinearLayout 
+	    	android:id="@+id/LinLayout"
+        	android:layout_centerInParent="true"
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal">
+
+	        <Button android:id="@+id/cancel"
+    			android:layout_weight="1"
+    			android:layout_width="0dip"
+    			android:layout_height="wrap_content"
+    			android:textSize="15sp"
+    			android:text="@string/cancel"
+    			android:layout_marginTop="15dp"
+    			/>
+    	
+		<Button android:id="@+id/ok"
+    		android:layout_weight="1"
+    		android:layout_width="0dip"
+    		android:layout_height="wrap_content"
+    		android:textSize="15sp"
+    		android:text="@string/ok"
+    		android:layout_marginTop="15dp"
+		/>
+	  
+    	
+    	
+    
+    	
+</LinearLayout>
+    	
+</LinearLayout>

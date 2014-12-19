@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<relation name="Family" color="#a8346789">
+    <item name="Mom" color="#a21bad60" />
+    <item name="Dad" color="#629060f9" />
+    <item name="Sister" color="#81ea4d08" />
+    <item name="Brother" color="#50936167" />
+    <item name="Wife" color="#f11e8a40" />
+    <item name="Husband" color="#c43225d0" />
+    <item name="Daughter" color="#ebaf2cf7" />
+    <item name="Son" color="#c43225d0" />
+    <item name="Grandma" color="#f0c416da" />
+    <item name="Grandpa" color="#e53d164f" />
+</relation>

@@ -1,0 +1,93 @@
+%\documentclass[a4paper,11pt]{article}
+\documentclass[journal]{IEEEtran}
+\usepackage[pdftex]{graphicx}
+\usepackage[pdftex, pdftitle={}, pdfauthor={}, pdfkeywords={},pdfstartview=FitB]{hyperref}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage[numbers]{natbib}
+\bibliographystyle{IEEEtran}
+
+\usepackage{soul}
+
+\begin{document}
+\title{Reproducing Social Networks from Anonymous Community Networks}
+
+\author{Norbert~B\'atfai, 
+M\'at\'e Smajda,
+Szir\'aki Szabolcs,
+Erika~B\'atfai,
+Kolozsv\'ari D\'avid%
+\thanks{N. B\'atfai is with the Department of Information Technology, University of Debrecen,
+H-4010 Debrecen PO Box 12, Hungary, e-mail: batfai.norbert@inf.unideb.hu.}
+\thanks{M\'at\'e Smajda,
+Szir\'aki Szabolcs,
+Erika~B\'atfai
+are with the University of Debrecen.}
+}
+
+\maketitle
+
+\begin{abstract}
+In this paper, we present an application, called YANonymous. It attempts to reproduce the global social network from its users' anonymous community networks. In parallel with this, we show results of a concrete experiment in which we try to develop a procedure to predict the behavior of the citizens in the Hungarian parliamentary election. The suggested prediction mechanism is entirely based on the social network reproduced  from the citizens' own anonymous community networks by the application YANonymous.
+\end{abstract}
+
+\begin{IEEEkeywords}
+social networks, community networks, Hungarian parliamentary election
+\end{IEEEkeywords}
+
+\section{Introduction}
+In our opinion it is possible to manufacture a social network from anonymous social nets. We can collect anonymous party preference information and then we can map a wider community network with the software which has been developed for this goal. The provided subgraphs are going into the YANonymous application and there the real social net will be outlined from the various anonymous networks with using the one-way, one-distance relations.
+
+\subsection{Related Works}
+
+\input{relw}
+
+\subsection{The Development Methodology}
+As main method we choiced the social-network analysis, because this method provides the rather tangible results to our program. 
+Why doesn’t the sociometry? The interpersonal relationships are explored quantitative by the sociometrics. The sociometry is the method of the close groups primarily. Its profits might are illustrated by sociogram or by reciprocal matrix (Mérei p. 50-58.).
+
+The pitfalls of the poll are divided to sampling and no sampling faults. In our case the sampling isn’t interpreted, because the purpose of research doesn’t replicate the various, which is occurred in the population (this is effective and valid in good case), instead of  real occurrence. Which is based on the goodness of social net might is generate.
+So the compromise on sampling doesn’t need too and the limit of error no problem, as well as the various are likely to representative. 
+
+The data collections was being run in our loose, personal social capital. Therefore we can define the companionship for networking, the type of relationship exactly. 
+At issue what extent does the so created pattern cover the nation-wide pattern, which existence is based on no social capital.
+
+We concocted our net very simply: margin of our net was marked out by ourselves with the nominalist approach. There wasn’t goal mapping of  the whole network of contacts, just an certain amount of real data were needed, which were no mirror and we didn’t conclude based on these to larger community reviews, however these gave basis of social net goodness’. That is we had a central ego-net  \cite{kurtosi}. The destiny of links and reciprocity of links are irrelevant too. This gave us the possibility to visualize the whole network as a tree graph, thus letting us to create various methods to display it to the user, from manual organization of the nodes to numerous types of automatic arranging.
+The data collection through questionnaire proves to was most appropriate, because specified  number of connection was needed.
+
+We used an application on the tablet to the collection.The asked person indicated party preferences of own social net points and their relations.  The data were storaged in the tablet without ID.
+We needed the more local subgraphs to manufacture an real social network, to this end we looked for people with similar affiliations (e.g. place of residence, workplace, university).
+
+\subsection{The Hungarian Parliamentary Election}
+
+The Hungarian voting right is equivalent and general. Every 18-years old and more Hungarian citizen with Hungarian address are entitled to vote. The election own is secret and no compulsory.
+
+People have got 199 representatives (106 personal and 93 listed) into the parliament since 2012 via one-round, two-votes election, when the citizen can vote 1 personal representative and 1 listed representative. Those parties may posit nationwide partylist, whose have candidate at least in the 9 counties and in the capital constituencies, independently. 
+
+We had to wait the finals partylist of Hungarian parlamentary election, 2014  to my  data collenction. We could vote 18 partylists, which based on the decision of the National Election Commission, on this election.
+
+
+\section{Reproducing Social Networks from Anonymous Community Networks}
+
+\subsection{The YANonymous Application}
+
+\input{yanoapp}
+
+\subsubsection{YANonymous Construct}
+
+\subsubsection{YANonymous Puzzle}
+
+\subsection{Experimental Results}
+
+\section{Conclusion}
+
+\section*{Acknowledgment}
+
+\input{ack}
+
+\input{bios}
+
+\bibliography{yanonymous}
+
+\end{document}

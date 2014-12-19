@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme name="Street Fighter" type="IMAGE" color="#aabbccdd">
+    <item name="blanka" color="#84769878" />
+    <item name="chunli" color="#a489a57e" />
+    <item name="dhalsim" color="#a4898cde" />
+    <item name="ehonda" color="#a489a9de" />
+    <item name="guile" color="#a4893cde" />
+    <item name="ken" color="#a489affe" />
+    <item name="ryu" color="#aa8caffe" />
+    <item name="zangief" color="#a489fcde" />
+</theme>

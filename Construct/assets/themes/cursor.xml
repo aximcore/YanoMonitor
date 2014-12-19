@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<theme name="Cursor" type="IMAGE" color="#80ff0000">
+    <item name="1" color="#8000ff00" />
+    <item name="2" color="#800000ff" />
+    <item name="3" color="#78a489cc" />
+    <item name="4" color="#5698ac23" />
+    <item name="5" color="#3498adce" />
+    <item name="6" color="#78237696" />
+    <item name="7" color="#78679245" />
+    <item name="8" color="#58ac37cd" />
+    <item name="9" color="#9a329812" />
+</theme>

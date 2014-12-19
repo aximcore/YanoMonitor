@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YANonymous Construct</string>
+    <string name="menu">Menü</string>
+    <string name="cancel">Vissza</string>
+    <string name="ok">OK</string>
+    <string name="defaultColor">Alapértelmezett</string>
+    <string name="save">Mentés</string>
+    <string name="delete">Törlés</string>
+    <string name="clear">Tisztítás</string>
+    <string name="load">Töltés</string>
+    <string name="cbc">Háttér módosítás</string>
+    <string name="red">Piros</string>
+    <string name="green">Zöld</string>
+    <string name="blue">Kék</string>
+    <string name="sound">Hang Be/Ki</string>
+    <string name="soundOn">Hang bekapcsolva</string>
+    <string name="soundOff">Hang kikapcsolva</string>
+    <string name="mozgatas">Mozgatás</string>
+    <string name="torles">Törlés</string>
+    <string name="torlesMod">Törlés mód</string>
+    <string name="offline">Offline módban nem elérhető</string>
+    <string name="empty_network">Üres közösségi háló nem illeszthető be</string>
+    <string name="service_unavailable">A szolgáltatás nem elérhető</string>
+    <string name="sent">Sikeres beillesztés</string>
+    <string name="error">Ajjaj! Valami hiba történt.</string>
+    <string name="title_activity_puzzle">YANonymous Puzzle</string>
+    <string name="get_photo">Get photo</string>
+    <string name="nodes">Nodes</string>
+
+</resources>

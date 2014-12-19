@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<relation name="Colleagues" color="#a075c05b">
+    <item name="Boss" color="#adea02ef" />
+    <item name="Employee" color="#ede52bd4" />
+    <item name="Receptionist" color="#ecafdb79" />
+    <item name="Cleaning lady" color="#a2f6c881" />
+    <item name="Slave" color="#90eb8cc9" />
+    <item name="Elevator boy" color="#8b688124" />
+    <item name="Assistant" color="#956c2d68" />
+</relation>
