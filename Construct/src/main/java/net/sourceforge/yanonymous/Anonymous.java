@@ -90,6 +90,8 @@ public class Anonymous extends LocalCommunityObject {
   {
 	  return name;
   }
+
+  public String getTheme(){return currentTheme.getThemeName();}
   
   public String getNext() {
 	    String pKey = null;

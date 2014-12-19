@@ -1,0 +1,53 @@
+option java_package = "net.sourceforge.yanonymous";
+
+message Datas {
+    repeated Anon anons = 1;
+    repeated Relations relations = 2;
+}
+
+message Anon{
+    required bool isMe = 1 [ default = false];
+    required float x = 2;
+    required float y = 3;
+    //required int32 id = 4;
+    //optional int32 relId = 5;
+
+    enum Name{
+        Party = 1;
+        Fidesz = 2;
+        MSZP = 3;
+        KDNP = 4;
+        Jobbik = 5;
+        LMP = 6;
+        EgyuttPM = 7;
+        DK = 8;
+        Yano = 9;
+    }
+
+    required Name name = 6 [ default = Party];
+}
+
+message Relations{
+
+    required float x1 = 1;
+    required float y1 = 2;
+    required float x2 = 3;
+    required float y2 = 4;
+
+    enum Name{
+        Family = 1;
+        Mom = 2;
+        Dad = 3;
+        Sister = 4;
+        Brother = 5;
+        Wife = 6;
+        Husband = 7;
+        Daughter = 8;
+        Son = 9;
+        Grandma = 10;
+        Grandpa = 11;
+    }
+
+    required Name name = 5 [default = Family ];
+
+}

@@ -61,6 +61,10 @@ public class Relation extends LocalCommunityObject implements
     this.relationTheme = this.name;
   }
 
+  public String getRelationTheme(){
+    return relationTheme;
+  }
+
   public int getColor() {
     for (YanoRelationModel r : relationModels) {
       if (relationTheme.equals(r.getRelationName())) {
