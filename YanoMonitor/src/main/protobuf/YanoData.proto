@@ -1,16 +1,16 @@
 option java_package = "yanomonitor";
 
 message Datas {
-    repeated Node nodes = 1;
+    repeated Anon anons = 1;
     repeated Relations relations = 2;
 }
 
-message Node{
+message Anon{
     required bool isMe = 1 [ default = false];
-    required int32 x = 2;
-    required int32 y = 3;
-    required int32 id = 4;
-    optional int32 relId = 5;
+    required float x = 2;
+    required float y = 3;
+    //required int32 id = 4;
+    //optional int32 relId = 5;
 
     enum Name{
         Party = 1;
@@ -29,21 +29,25 @@ message Node{
 
 message Relations{
 
-    required int32 x1 = 1;
-    required int32 y1 = 2;
-    required int32 x2 = 3;
-    required int32 y2 = 4;
+    required float x1 = 1;
+    required float y1 = 2;
+    required float x2 = 3;
+    required float y2 = 4;
 
     enum Name{
-        Relationship = 1;
-        Csajom = 2;
-        Fium = 3;
-        Muter = 4;
-        Fater = 5;
-        Teso = 6;
-        Szomszed = 7;
+        Family = 1;
+        Mom = 2;
+        Dad = 3;
+        Sister = 4;
+        Brother = 5;
+        Wife = 6;
+        Husband = 7;
+        Daughter = 8;
+        Son = 9;
+        Grandma = 10;
+        Grandpa = 11;
     }
 
-    required Name name = 5 [default = Relationship ];
+    required Name name = 5 [default = Family ];
 
 }

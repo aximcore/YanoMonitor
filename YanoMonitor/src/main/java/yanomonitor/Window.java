@@ -41,7 +41,7 @@ public class Window extends javax.swing.JFrame{
 			g.drawLine(rel.getX1(),rel.getY1(),rel.getX2(),rel.getY2());
 		}
 
-		for ( YanoData.Node node : datas.getNodesList()){
+		for ( YanoData.Anon node : datas.getAnonsList()){
 			g.setColor(Color.BLACK);
 			g.drawOval(node.getX(),node.getY(),10,10);
 			Ellipse2D.Double circle = new Ellipse2D.Double(node.getX(),node.getY(),10,10);
