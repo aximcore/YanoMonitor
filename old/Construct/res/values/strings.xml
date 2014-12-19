@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YANonymous Construct</string>
+    <string name="menu">Menu</string>
+    <string name="cancel">Cancel</string>
+    <string name="connect">Connect</string>
+    <string name="ok">OK</string>
+    <string name="defaultColor">Default</string>
+    <string name="mozgatas">Mozgatás</string>
+    <string name="torles">Törlés</string>
+    <string name="ip_adress">IP cím</string>
+    <string name="fee_warning">Warining! Using this feature may generate additional fees!</string>
+</resources>

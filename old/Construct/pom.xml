@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+* pom.xml
+*
+* YANonymous
+* https://sourceforge.net/projects/yanonymous/
+*
+* Copyright (C) 2010, Dr. Bátfai Norbert
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*
+* Ez a program szabad szoftver; terjeszthető illetve módosítható a
+* Free Software Foundation által kiadott GNU General Public License
+* dokumentumában leírtak; akár a licenc 3-as, akár (tetszőleges) későbbi
+* változata szerint.
+*
+* Ez a program abban a reményben kerül közreadásra, hogy hasznos lesz,
+* de minden egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA
+* VALÓ ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve.
+* További részleteket a GNU General Public License tartalmaz.
+*
+* A felhasználónak a programmal együtt meg kell kapnia a GNU General
+* Public License egy példányát; ha mégsem kapta meg, akkor
+* tekintse meg a <http://www.gnu.org/licenses/> oldalon.
+*
+* 
+*
+* Version history:
+*
+* 0.0.1, 2013.szept.26., az Eclipse projekt átírása IDE független Maven projektbe.
+* http://progpater.blog.hu/2013/09/17/o_mondd_te_kit_valasztanal_525
+*
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.sourceforge.yanonymous</groupId>
+    <artifactId>YANonymousConstruct</artifactId>
+    <version>0.0.1</version>
+    <packaging>apk</packaging>
+    <name>YANonymousConstruct</name>
+    <url>https://sourceforge.net/projects/yanonymous/</url>
+    <description>YANonymous is a research project designed to attempt to
+        reproduce the social network of the users from their anonymized
+        community networks. The formula of the app YANonymous is "YANonymous =
+        YANA (You Are Not Alone) + Anonymous = You Are Not Anonymous".</description>
+    <organization>
+        <name>Norbert Batfai, University of Debrecen, Department of Information Technology</name>
+        <url>http://www.inf.unideb.hu/~nbatfai</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>GNU GPL v3</name>
+            <url>http://www.gnu.org/licenses/gpl.html</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>norbi</id>
+            <name>Norbert Batfai</name>
+            <email>nbatfai@gmail.com</email>
+            <url>http://www.inf.unideb.hu/~nbatfai</url>
+            <organization>University of Debrecen</organization>
+            <organizationUrl>http://www.inf.unideb.hu</organizationUrl>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>4.1.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>3.9.0-rc.3</version>
+                <configuration>
+                    <sdk>
+                        <platform>10</platform>
+                    </sdk>
+                    <deleteConflictingFiles>true</deleteConflictingFiles>
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                </configuration>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate-sources</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <tasks>
+                                <exec executable="protoc">
+                                    <arg value="--java_out=src/main/java/"/>
+                                    <arg value="src/main/proto/message.proto"/>
+                                </exec>
+                            </tasks>
+                            <sourceRoot>target/generated-sources</sourceRoot>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.12.1</version>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>
